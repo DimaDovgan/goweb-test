@@ -31,6 +31,8 @@ import React, { useState } from 'react';
       cogoToast.success(`${values.name} we have accepted your request, please wait for our call!`);
       resetForm();
      },
+
+     
    });
    return (
     <div className={s.formaPath} >
