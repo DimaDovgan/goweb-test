@@ -22,7 +22,8 @@ import React, { useState } from 'react';
  
  const ContactForm = () => {
    const formik = useFormik({
-     initialValues: {
+     initialValues: { 
+      
         name:'',
        email: '',
      },
@@ -30,6 +31,8 @@ import React, { useState } from 'react';
      onSubmit: (values,{resetForm})=> {
       cogoToast.success(`${values.name} we have accepted your request, please wait for our call!`);
       resetForm();
+
+
      },
 
      
